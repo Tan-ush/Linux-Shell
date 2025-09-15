@@ -95,7 +95,7 @@ int main(__attribute__((unused)) int argc,
       
     
     
-    char *prompt = "mysh$ "; // TODO Step 1, Uncomment this.
+    char *prompt = "mysh$ ";
     signal(SIGINT, handle_sigint);   // Ignore Ctrl+C in the shell
     signal(SIGCHLD, handle_sigchld); 
 
