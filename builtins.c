@@ -69,8 +69,6 @@ ssize_t bn_echo(char **tokens) {
 
     }
     while (tokens[index] != NULL) {
-        // TODO:
-        // Implement the echo commande
         size_t len_token = strlen(tokens[index]);
         if (len + 1 + len_token >= MAX_STR_LEN){
             size_t remaining = MAX_STR_LEN - len - 1;
