@@ -5,8 +5,6 @@
 #include "commands.h"
 #include "io_helpers.h"
 
-// APA Citation for Gen AI use, specifcally with the prompt "How can I account for inputs that have --rec and no depth?"
-// OpenAI. (2025). ChatGPT (September 2024 version) [Large language model]. https://chat.openai.com/chat
 void recursive_ls(char *dir_name, long depth, char *substring){
     if (depth == 0){
         return;
@@ -61,8 +59,6 @@ void list_dir(char *dir_name, char *substring){
 
 }
 
-// APA Citation for Gen AI use, specifcally with the prompt "How do you conveert numbers to strings with no string methods?"
-// OpenAI. (2025). ChatGPT (September 2024 version) [Large language model]. https://chat.openai.com/chat
 void number_to_string(ssize_t num, char *buffer) {
     ssize_t i = 0;
     ssize_t is_negative = 0;
