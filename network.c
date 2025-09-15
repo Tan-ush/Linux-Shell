@@ -72,8 +72,6 @@ int write_to_socket(int sock_fd, const char *msg) {
     return write(sock_fd, buf, strlen(buf)) == -1 ? -1 : 0;
 }
 
-// APA Citation for Gen AI use, specifcally with the prompt "How do you ensure a valid string is read?"
-// OpenAI. (2025). ChatGPT (September 2024 version) [Large language model]. https://chat.openai.com/chat
 // Reads from socket into buffer
 int read_from_socket(int sock_fd, char *buf, int *inbuf) {
     // Read exactly BUF_SIZE bytes (including null-terminator space)
